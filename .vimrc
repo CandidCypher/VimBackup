@@ -4,6 +4,9 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
+"Turning off Rope"
+let g:pymode_rope_lookup_project = 0
+let g:pymode_rope_complete_on_dot = 0
 
 "Automatic reloading of .vimrc"
 autocmd! bufwritepost .vimrc source %
